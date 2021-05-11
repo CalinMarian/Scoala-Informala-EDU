@@ -17,5 +17,33 @@ namespace Scoala_Informala_EDU
             InitializeComponent();
         }
 
+        private void QuizClickEvent(object sender, EventArgs e)
+        {
+            Form frm = new Form3();
+            frm.ShowDialog();
+        }
+
+        private void LearnClickEvent(object sender, EventArgs e)
+        {
+            Form frm = new Form2();
+            frm.ShowDialog();
+        }
+
+        private void JobClickEvent(object sender, EventArgs e)
+        {
+            Form frm = new Form4();
+            frm.ShowDialog();
+        }
+
+        private void AboutClickEvent(object sender, EventArgs e)
+        {
+            Form frm = new Form5();
+            frm.ShowDialog();
+        }
+
+        private void QuitClickEvent(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
