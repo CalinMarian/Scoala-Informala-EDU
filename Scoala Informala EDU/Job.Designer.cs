@@ -1,7 +1,7 @@
 ﻿
 namespace Scoala_Informala_EDU
 {
-    partial class Form5
+    partial class Job
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Scoala_Informala_EDU
         {
             this.SuspendLayout();
             // 
-            // Form5
+            // Job
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 261);
-            this.Name = "Form5";
+            this.ClientSize = new System.Drawing.Size(944, 491);
+            this.Name = "Job";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "About";
+            this.Text = "Job Interview Tips";
             this.ResumeLayout(false);
 
         }

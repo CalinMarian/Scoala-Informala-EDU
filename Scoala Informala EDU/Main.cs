@@ -10,34 +10,34 @@ using System.Windows.Forms;
 
 namespace Scoala_Informala_EDU
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
 
         private void QuizClickEvent(object sender, EventArgs e)
         {
-            Form frm = new Form3();
+            Form frm = new Quiz();
             frm.ShowDialog();
         }
 
         private void LearnClickEvent(object sender, EventArgs e)
         {
-            Form frm = new Form2();
+            Form frm = new Learn();
             frm.ShowDialog();
         }
 
         private void JobClickEvent(object sender, EventArgs e)
         {
-            Form frm = new Form4();
+            Form frm = new Job();
             frm.ShowDialog();
         }
 
         private void AboutClickEvent(object sender, EventArgs e)
         {
-            Form frm = new Form5();
+            Form frm = new About();
             frm.ShowDialog();
         }
 

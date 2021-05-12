@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Scoala_Informala_EDU
 {
-    public partial class Form2 : Form
+    public partial class Learn : Form
     {
-        public Form2()
+        public Learn()
         {
             InitializeComponent();
         }

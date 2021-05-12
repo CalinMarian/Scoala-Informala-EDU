@@ -1,7 +1,7 @@
 ﻿
 namespace Scoala_Informala_EDU
 {
-    partial class Form3
+    partial class About
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Scoala_Informala_EDU
         {
             this.SuspendLayout();
             // 
-            // Form3
+            // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 591);
-            this.Name = "Form3";
+            this.ClientSize = new System.Drawing.Size(296, 203);
+            this.Name = "About";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quiz";
+            this.Text = "About";
             this.ResumeLayout(false);
 
         }
