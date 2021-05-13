@@ -16,5 +16,10 @@ namespace Scoala_Informala_EDU
         {
             InitializeComponent();
         }
+
+        private void CloseClickEvent(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
