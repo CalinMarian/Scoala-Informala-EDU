@@ -38,7 +38,7 @@ namespace Scoala_Informala_EDU
             this.ClientSize = new System.Drawing.Size(944, 491);
             this.Name = "Learn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quiz";
+            this.Text = "Learn";
             this.ResumeLayout(false);
 
         }
