@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace Scoala_Informala_EDU
 {
-    public partial class Form1 : Form
+    public partial class About : Form
     {
-        public Form1()
+        public About()
         {
             InitializeComponent();
         }
 
+        private void CloseClickEvent(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
