@@ -12,6 +12,7 @@ namespace Scoala_Informala_EDU
 {
     public partial class Main : Form
     {
+        private System.Media.SoundPlayer mediaSoundPlayer = new System.Media.SoundPlayer();
         public Main()
         {
             InitializeComponent();
@@ -44,6 +45,17 @@ namespace Scoala_Informala_EDU
         private void QuitClickEvent(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_music_Click(object sender, EventArgs e)
+        {
+            mediaSoundPlayer.Stream = Properties.Resources.myMusic_wav;
+            mediaSoundPlayer.PlayLooping();
+        }
+
+        private void btn_Stop_Click(object sender, EventArgs e)
+        {
+            mediaSoundPlayer.Stop();
         }
     }
 }

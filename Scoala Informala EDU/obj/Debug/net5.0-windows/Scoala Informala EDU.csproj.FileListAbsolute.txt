@@ -44,3 +44,26 @@ C:\Users\cg25682\Desktop\1111111111111111\Scoala Informala EDU\obj\Debug\net5.0-
 C:\Users\cg25682\Desktop\1111111111111111\Scoala Informala EDU\obj\Debug\net5.0-windows\ref\Scoala Informala EDU.dll
 C:\Users\cg25682\Desktop\1111111111111111\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.pdb
 C:\Users\cg25682\Desktop\1111111111111111\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.genruntimeconfig.cache
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.exe
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.deps.json
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.runtimeconfig.json
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.runtimeconfig.dev.json
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.dll
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\ref\Scoala Informala EDU.dll
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\bin\Debug\net5.0-windows\Scoala Informala EDU.pdb
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.csprojAssemblyReference.cache
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.About.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.Job.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.Learn.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.Main.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.Properties.Resources.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala_Informala_EDU.Quiz.resources
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.csproj.GenerateResource.cache
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.AssemblyInfo.cs
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.dll
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\ref\Scoala Informala EDU.dll
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.pdb
+C:\Users\user\Desktop\rEPOpROJ\Scoala Informala EDU\obj\Debug\net5.0-windows\Scoala Informala EDU.genruntimeconfig.cache
