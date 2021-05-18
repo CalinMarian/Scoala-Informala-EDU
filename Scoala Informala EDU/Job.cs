@@ -41,7 +41,7 @@ namespace Scoala_Informala_EDU
                 MessageBox.Show("Don't lie in your resume because chances are, your employer will question you about what you've put in.\r\nDon't be left floundering with an answer.");
                 MessageBox.Show("Don't be arrogant.\r\nPeople need to work with you, and you most likely won't get hired if they feel you won't be a good fit for the team.");
                 MessageBox.Show("Don't fidget, and try to come up with an answer, if you don't know the answer to a question.");
-                MessageBox.Show("Don\t start quickly to talk if someone asked you a question, just to fill in the silence in the room.\r\nCollect your thoughts and take some time to consider the answer.");
+                MessageBox.Show("Don't start quickly to talk if someone asked you a question, just to fill in the silence in the room.\r\nCollect your thoughts and take some time to consider the answer.");
 
             }
             else if (e.Node.Name == "nCV")
