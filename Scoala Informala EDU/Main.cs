@@ -51,6 +51,7 @@ namespace Scoala_Informala_EDU
         {
             mediaSoundPlayer.Stream = Properties.Resources.myMusic_wav;
             mediaSoundPlayer.PlayLooping();
+            
         }
 
         private void btn_Stop_Click(object sender, EventArgs e)

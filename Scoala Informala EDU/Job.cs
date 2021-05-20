@@ -29,7 +29,7 @@ namespace Scoala_Informala_EDU
                 MessageBox.Show("Read the job description really carefully.\r\nMaximize your understanding of what the company is all about.");
                 MessageBox.Show("Read your own resume!Tell the truth\r\nYou do not want to lie, however you want to make sure that what is proeminent that the relevant information about you is that you want/can solve this problems for the employer");
                 MessageBox.Show("Recognize that interviewers want you to succeed.\r\nThey don't want to trik you, but rather assess your skills:communication, enthusiasm and passion for programming.");
-                MessageBox.Show("Avoid being arrogant or too opinionated.\r\nBe humble and eager to lear.\r\nEven if you are brilliant, people still need to work with you.");
+                MessageBox.Show("Avoid being arrogant or too opinionated.\r\nBe humble and eager to learn.\r\nEven if you are brilliant, people still need to work with you.");
                 MessageBox.Show("Ask questions about the company, position, framework, other programming languages they are using, the team.");
                 MessageBox.Show("It is OK to say you don't know something.\r\nRealize that more than likely the person interviewing you hs the same technology that you do.");
                 MessageBox.Show("Don't rush your answers.\r\nFocus on your vocabilary while talking.\r\nTry to use the righ computer terms.");
@@ -64,6 +64,26 @@ namespace Scoala_Informala_EDU
                 MessageBox.Show("You are focusing only on what is coming up, and not on what you have achieved.\r\nTake a step back and recognize your success");
                 MessageBox.Show("Remember that all programmers were at a certain point in their life when they didn't know how to code.\r\nNobody is born a programmer.");
             }
+
+        }
+
+        private void btn_quiz_Click(object sender, EventArgs e)
+        {
+            QuizTips quizTips = new QuizTips();
+            this.Hide();
+            quizTips.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTips_Click(object sender, EventArgs e)
+        {
+            Tips tips = new Tips();
+            this.Hide();
+            tips.ShowDialog();
 
         }
     }

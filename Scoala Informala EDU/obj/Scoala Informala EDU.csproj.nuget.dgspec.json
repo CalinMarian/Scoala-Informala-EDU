@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\rEPOpROJ\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {}
+    "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\rEPOpROJ\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {
+    "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\rEPOpROJ\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
         "projectName": "Scoala Informala EDU",
-        "projectPath": "C:\\Users\\user\\Desktop\\rEPOpROJ\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\rEPOpROJ\\Scoala Informala EDU\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
