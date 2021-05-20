@@ -51,7 +51,7 @@ namespace Scoala_Informala_EDU
             this.button1.Tag = "1";
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.button1.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // button2
             // 
@@ -62,7 +62,7 @@ namespace Scoala_Informala_EDU
             this.button2.Tag = "2";
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.button2.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // button3
             // 
@@ -73,7 +73,7 @@ namespace Scoala_Informala_EDU
             this.button3.Tag = "3";
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.button3.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // button4
             // 
@@ -84,7 +84,7 @@ namespace Scoala_Informala_EDU
             this.button4.Tag = "4";
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.checkAnswerEvent);
+            this.button4.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
             // pictureBox1
             // 
@@ -106,7 +106,7 @@ namespace Scoala_Informala_EDU
             this.lblQuestions.TabIndex = 5;
             this.lblQuestions.Text = "Question";
             this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblQuestions.Click += new System.EventHandler(this.label1_Click);
+            this.lblQuestions.Click += new System.EventHandler(this.Label1_Click);
             // 
             // txtQuestion
             // 
@@ -119,11 +119,11 @@ namespace Scoala_Informala_EDU
             this.txtQuestion.Text = "Hi, welcome to this quiz game! We will be showing different questions, make sure " +
     "to choose the correct answer!";
             this.txtQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtQuestion.TextChanged += new System.EventHandler(this.txtQuestion_TextChanged);
+            this.txtQuestion.TextChanged += new System.EventHandler(this.TxtQuestion_TextChanged);
             // 
             // countdownTimer
             // 
-            this.countdownTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            this.countdownTimer.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // lblScreen
             // 

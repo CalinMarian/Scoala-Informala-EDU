@@ -29,69 +29,72 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("CV");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("DOs");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("DON\'Ts");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Interview", new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Impostor Syndrome");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("TIPS  ", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode10,
-            treeNode11});
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.btn_quiz = new System.Windows.Forms.Button();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("CV");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("DOs");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("DON\'Ts");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Interview", new System.Windows.Forms.TreeNode[] {
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Impostor Syndrome");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("TIPS  ", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode4,
+            treeNode5});
+            this.TreeView1 = new System.Windows.Forms.TreeView();
+            this.Btn_quiz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTips = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // treeView1
+            // TreeView1
             // 
-            this.treeView1.CheckBoxes = true;
-            this.treeView1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.treeView1.HotTracking = true;
-            this.treeView1.Location = new System.Drawing.Point(14, 14);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(5);
-            this.treeView1.Name = "treeView1";
-            treeNode7.Name = "nCV";
-            treeNode7.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode7.Text = "CV";
-            treeNode8.Name = "nDo";
-            treeNode8.NodeFont = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode8.Text = "DOs";
-            treeNode9.Name = "nDonts";
-            treeNode9.NodeFont = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode9.Text = "DON\'Ts";
-            treeNode10.Name = "nInterview";
-            treeNode10.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode10.Text = "Interview";
-            treeNode11.Name = "nIS";
-            treeNode11.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode11.Text = "Impostor Syndrome";
-            treeNode12.Name = "nTIPS";
-            treeNode12.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            treeNode12.Text = "TIPS  ";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12});
-            this.treeView1.Size = new System.Drawing.Size(235, 174);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            this.TreeView1.CheckBoxes = true;
+            this.TreeView1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreeView1.HotTracking = true;
+            this.TreeView1.Location = new System.Drawing.Point(14, 14);
+            this.TreeView1.Margin = new System.Windows.Forms.Padding(5);
+            this.TreeView1.Name = "TreeView1";
+            treeNode1.Name = "nCV";
+            treeNode1.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode1.Text = "CV";
+            treeNode2.Name = "nDo";
+            treeNode2.NodeFont = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode2.Text = "DOs";
+            treeNode3.Name = "nDonts";
+            treeNode3.NodeFont = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode3.Text = "DON\'Ts";
+            treeNode4.Name = "nInterview";
+            treeNode4.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode4.Text = "Interview";
+            treeNode5.Name = "nIS";
+            treeNode5.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode5.Text = "Impostor Syndrome";
+            treeNode6.Name = "nTIPS";
+            treeNode6.NodeFont = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            treeNode6.Text = "TIPS  ";
+            this.TreeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode6});
+            this.TreeView1.Size = new System.Drawing.Size(235, 174);
+            this.TreeView1.TabIndex = 0;
+            this.TreeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView1_AfterSelect);
             // 
-            // btn_quiz
+            // Btn_quiz
             // 
-            this.btn_quiz.BackColor = System.Drawing.Color.Yellow;
-            this.btn_quiz.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_quiz.Location = new System.Drawing.Point(737, 444);
-            this.btn_quiz.Name = "btn_quiz";
-            this.btn_quiz.Size = new System.Drawing.Size(195, 35);
-            this.btn_quiz.TabIndex = 1;
-            this.btn_quiz.Text = "Quick Quiz!";
-            this.btn_quiz.UseVisualStyleBackColor = false;
-            this.btn_quiz.Click += new System.EventHandler(this.btn_quiz_Click);
+            this.Btn_quiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_quiz.BackColor = System.Drawing.Color.Yellow;
+            this.Btn_quiz.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Btn_quiz.Location = new System.Drawing.Point(737, 444);
+            this.Btn_quiz.Name = "Btn_quiz";
+            this.Btn_quiz.Size = new System.Drawing.Size(195, 35);
+            this.Btn_quiz.TabIndex = 1;
+            this.Btn_quiz.Text = "Quick Quiz!";
+            this.Btn_quiz.UseVisualStyleBackColor = false;
+            this.Btn_quiz.Click += new System.EventHandler(this.Btn_quiz_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(737, 227);
@@ -101,7 +104,7 @@ namespace Scoala_Informala_EDU
             this.label1.Text = "How did you find the tips?\r\n\r\nFelling confident enough for a quick quiz?\r\n\r\nClick" +
     " on the Quick Quiz button for a short assessment!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // btnTips
             // 
@@ -111,7 +114,15 @@ namespace Scoala_Informala_EDU
             this.btnTips.TabIndex = 3;
             this.btnTips.Text = "TIPS";
             this.btnTips.UseVisualStyleBackColor = true;
-            this.btnTips.Click += new System.EventHandler(this.btnTips_Click);
+            this.btnTips.Click += new System.EventHandler(this.BtnTips_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(290, 14);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(642, 210);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
             // 
             // Job
             // 
@@ -119,10 +130,11 @@ namespace Scoala_Informala_EDU
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.Background_tips;
             this.ClientSize = new System.Drawing.Size(944, 491);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnTips);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_quiz);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.Btn_quiz);
+            this.Controls.Add(this.TreeView1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Job";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -133,9 +145,10 @@ namespace Scoala_Informala_EDU
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button btn_quiz;
+        private System.Windows.Forms.TreeView TreeView1;
+        private System.Windows.Forms.Button Btn_quiz;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTips;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

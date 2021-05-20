@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\cg25682\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+      "projectUniqueName": "C:\\Users\\cg25682\\Desktop\\newwwwwwww\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
       "projectName": "Scoala Informala EDU",
-      "projectPath": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\rep 5182021\\Scoala Informala EDU\\obj\\",
+      "projectPath": "C:\\Users\\cg25682\\Desktop\\newwwwwwww\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+      "packagesPath": "C:\\Users\\cg25682\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cg25682\\Desktop\\newwwwwwww\\Scoala Informala EDU\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cg25682\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

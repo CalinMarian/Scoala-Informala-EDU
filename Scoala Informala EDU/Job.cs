@@ -17,9 +17,8 @@ namespace Scoala_Informala_EDU
             InitializeComponent();
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void TreeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            var text = this.Name;
 
             if (e.Node.Name == "nDo")
             {
@@ -67,21 +66,21 @@ namespace Scoala_Informala_EDU
 
         }
 
-        private void btn_quiz_Click(object sender, EventArgs e)
+        private void Btn_quiz_Click(object sender, EventArgs e)
         {
-            QuizTips quizTips = new QuizTips();
+            QuizTips quizTips = new();
             this.Hide();
             quizTips.ShowDialog();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnTips_Click(object sender, EventArgs e)
+        private void BtnTips_Click(object sender, EventArgs e)
         {
-            Tips tips = new Tips();
+            Tips tips = new();
             this.Hide();
             tips.ShowDialog();
 

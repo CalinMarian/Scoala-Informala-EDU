@@ -17,40 +17,40 @@ namespace Scoala_Informala_EDU
         int questionNumber = 1;
         int score;
         int percentage;
-        int totalQuestions;
+        readonly int totalQuestions;
         int seconds = 0;
 
         public QuizTips()
         {
             InitializeComponent();
-            askQuestion(questionNumber);
+            AskQuestion(questionNumber);
             totalQuestions = 15;
         }
 
         private void QuizTips_Load(object sender, EventArgs e)
         {
-    
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void checkAnswerEvent(object sender, EventArgs e)
+        private void CheckAnswerEvent(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
 
-            nextQuestion();
+            NextQuestion();
 
             if (buttonTag == correctAnswer)
             {
                 score++;
             }
 
-            
+
 
             if (questionNumber == totalQuestions)
             {
@@ -64,27 +64,28 @@ namespace Scoala_Informala_EDU
 
                 score = 0;
                 questionNumber = 0;
-                askQuestion(questionNumber);
+                AskQuestion(questionNumber);
             }
 
-            
+
             questionNumber++;
-            askQuestion(questionNumber);        
+            AskQuestion(questionNumber);
         }
 
-        private void nextQuestion()
+        private void NextQuestion()
         {
-            if (seconds == 0)
+            if (seconds == -1)
             {
                 questionNumber++;
-            }
+                AskQuestion(questionNumber);
+         }
         }
 
-        private void askQuestion(int qNum)
+        private void AskQuestion(int qNum)
         {
             seconds = 100;
             countdownTimer.Start();
-            
+
 
 
             switch (qNum)
@@ -284,21 +285,27 @@ namespace Scoala_Informala_EDU
                     correctAnswer = 3;
                     break;
 
-                    
+
             }
         }
 
-        private void txtQuestion_TextChanged(object sender, EventArgs e)
+        private void TxtQuestion_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             lblScreen.Text = seconds--.ToString();
             if (seconds < 0)
+            {
                 countdownTimer.Stop();
-            
+                NextQuestion();
+            }
+
+
+
+
         }
     }
 }
