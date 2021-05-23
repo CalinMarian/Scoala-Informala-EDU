@@ -21,5 +21,10 @@ namespace Scoala_Informala_EDU
         {
             Close();
         }
+
+        private void lblAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,6 +60,7 @@ namespace Scoala_Informala_EDU
             this.lblAbout.Text = "Version 1.0\r\n\r\nDesigned by:\r\nClaudia\r\nDorothy\r\nCalin\r\n\r\nGuidance: Bogdan from \"Sc" +
     "oala Informala de IT\"";
             this.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAbout.Click += new System.EventHandler(this.lblAbout_Click);
             // 
             // About
             // 
