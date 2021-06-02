@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dy\\Desktop\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {}
+    "C:\\Users\\cg25682\\Desktop\\NEWWW\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dy\\Desktop\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {
+    "C:\\Users\\cg25682\\Desktop\\NEWWW\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dy\\Desktop\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+        "projectUniqueName": "C:\\Users\\cg25682\\Desktop\\NEWWW\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
         "projectName": "Scoala Informala EDU",
-        "projectPath": "C:\\Users\\Dy\\Desktop\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
-        "packagesPath": "C:\\Users\\Dy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dy\\Desktop\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\obj\\",
+        "projectPath": "C:\\Users\\cg25682\\Desktop\\NEWWW\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\Scoala Informala EDU.csproj",
+        "packagesPath": "C:\\Users\\cg25682\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cg25682\\Desktop\\NEWWW\\Scoala-Informala-EDU-main-(the good one)\\Scoala-Informala-EDU-main\\Scoala Informala EDU\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\cg25682\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"

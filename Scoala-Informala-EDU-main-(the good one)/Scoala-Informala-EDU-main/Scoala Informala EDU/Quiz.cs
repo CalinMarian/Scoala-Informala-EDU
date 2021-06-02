@@ -17,20 +17,18 @@ namespace Scoala_Informala_EDU
         int questionNumber = 1;
         int score;
         int percentage;
-        int totalQuestions;
+        readonly int totalQuestions = 10;
         
 
         public Quiz()
         {
             InitializeComponent();
 
-            askQuestion(questionNumber);
-            
+            AskQuestion(questionNumber);
 
-            totalQuestions = 10;
         }
 
-        private void checkAnswerEvent(object sender, EventArgs e)
+        private void CheckAnswerEvent(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
 
@@ -41,30 +39,38 @@ namespace Scoala_Informala_EDU
             if (buttonTag == correctAnswer)
             {
                 score++;
-               
+                questionNumber++;
+                AskQuestion(questionNumber);
+
             }
-           
-            if(questionNumber == totalQuestions)
+
+            if (questionNumber == totalQuestions)
             {
                 percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
 
                 MessageBox.Show(
                     "Quiz Ended!" + Environment.NewLine +
-                    "You have answered " + score + " questions correctly " + Environment.NewLine +
+                    "You have answered " + score + " questions correctly! " + Environment.NewLine +
+                    "Your total percentage is " + percentage + "%" + Environment.NewLine +
                     "Click OK to play again"
                     );
-                
+
                 score = 0;
-                questionNumber = 0;
-                askQuestion(questionNumber);
+                questionNumber = 1;
+                AskQuestion(questionNumber);
+            }
+            else 
+            {
+                questionNumber++;
+                AskQuestion(questionNumber);
             }
             
         }
 
-        private void askQuestion(int qnum)
+        private void AskQuestion(int questionNumber)
         {
 
-            switch (qnum)
+            switch (questionNumber)
             {
                 case 1:
                     pictureBox.Image = Properties.Resources.MainBackround;
@@ -77,7 +83,7 @@ namespace Scoala_Informala_EDU
                     button4.Text = "2012";
 
                     correctAnswer = 3;
-
+                
                     break;
                 case 2:
                     pictureBox.Image = Properties.Resources.MainBackround;
@@ -107,7 +113,6 @@ namespace Scoala_Informala_EDU
                     break;
                 case 4:
                     pictureBox.Image = Properties.Resources.Q4;
-
                     lblQuestion.Text = "Which of the following will be the correct output for the C#.NET code snippet given below?";
 
                     button1.Text = "NagpuMumbair";
@@ -121,7 +126,6 @@ namespace Scoala_Informala_EDU
 
                 case 5:
                     pictureBox.Image = Properties.Resources.Q5;
-
 
                     lblQuestion.Text = "Which of the following will be the correct output for the C#.NET code snippet given below?";
 
