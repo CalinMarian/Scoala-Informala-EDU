@@ -15,10 +15,10 @@ namespace Scoala_Informala_EDU
 
         int correctAnswer;
         int questionNumber = 1;
-        int score;
+        int score = 0;
         int percentage;
         readonly int totalQuestions = 10;
-        
+
 
         public Quiz()
         {
@@ -33,15 +33,12 @@ namespace Scoala_Informala_EDU
             var senderObject = (Button)sender;
 
             int buttonTag = Convert.ToInt32(senderObject.Tag);
-            
+
 
 
             if (buttonTag == correctAnswer)
             {
                 score++;
-                questionNumber++;
-                AskQuestion(questionNumber);
-
             }
 
             if (questionNumber == totalQuestions)
@@ -51,21 +48,20 @@ namespace Scoala_Informala_EDU
                 MessageBox.Show(
                     "Quiz Ended!" + Environment.NewLine +
                     "You have answered " + score + " questions correctly! " + Environment.NewLine +
-                    "Your total percentage is " + percentage + "%" + Environment.NewLine +
-                    "Click OK to play again"
+                    "Your total percentage is " + percentage + "% !" + Environment.NewLine +
+                    "Click OK to play again."
                     );
 
                 score = 0;
                 questionNumber = 1;
                 AskQuestion(questionNumber);
             }
-            else 
-            {
-                questionNumber++;
-                AskQuestion(questionNumber);
-            }
-            
+
+            questionNumber++;
+            AskQuestion(questionNumber);
         }
+
+
 
         private void AskQuestion(int questionNumber)
         {
@@ -83,6 +79,7 @@ namespace Scoala_Informala_EDU
                     button4.Text = "2012";
 
                     correctAnswer = 3;
+
                 
                     break;
                 case 2:

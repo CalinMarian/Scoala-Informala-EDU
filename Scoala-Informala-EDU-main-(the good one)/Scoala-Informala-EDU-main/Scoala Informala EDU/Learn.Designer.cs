@@ -29,64 +29,62 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Introduction to Programming");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Types & Variables");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("C# Keywords");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Integer types and their ranges of values");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Intro", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.pictureBoxPDF = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPDF)).BeginInit();
+            this.pictureBoxLearn = new System.Windows.Forms.PictureBox();
+            this.linkLbl = new System.Windows.Forms.LinkLabel();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn)).BeginInit();
             this.SuspendLayout();
             // 
-            // treeView1
+            // pictureBoxLearn
             // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.treeView1.Location = new System.Drawing.Point(12, 12);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node1";
-            treeNode1.Text = "Introduction to Programming";
-            treeNode2.Name = "Node2";
-            treeNode2.Text = "Types & Variables";
-            treeNode3.Name = "Node3";
-            treeNode3.Text = "C# Keywords";
-            treeNode4.Name = "Node7";
-            treeNode4.Text = "Integer types and their ranges of values";
-            treeNode5.Name = "Node0";
-            treeNode5.Text = "Intro";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5});
-            this.treeView1.Size = new System.Drawing.Size(283, 467);
-            this.treeView1.TabIndex = 0;
+            this.pictureBoxLearn.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxLearn.Name = "pictureBoxLearn";
+            this.pictureBoxLearn.Size = new System.Drawing.Size(920, 436);
+            this.pictureBoxLearn.TabIndex = 0;
+            this.pictureBoxLearn.TabStop = false;
             // 
-            // pictureBoxPDF
+            // linkLbl
             // 
-            this.pictureBoxPDF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxPDF.Location = new System.Drawing.Point(301, 12);
-            this.pictureBoxPDF.Name = "pictureBoxPDF";
-            this.pictureBoxPDF.Size = new System.Drawing.Size(631, 467);
-            this.pictureBoxPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxPDF.TabIndex = 1;
-            this.pictureBoxPDF.TabStop = false;
+            this.linkLbl.AutoSize = true;
+            this.linkLbl.Location = new System.Drawing.Point(412, 460);
+            this.linkLbl.Name = "linkLbl";
+            this.linkLbl.Size = new System.Drawing.Size(108, 15);
+            this.linkLbl.TabIndex = 1;
+            this.linkLbl.TabStop = true;
+            this.linkLbl.Text = "Click here for more";
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.Location = new System.Drawing.Point(13, 454);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(95, 27);
+            this.btnPrev.TabIndex = 2;
+            this.btnPrev.Text = "Prev";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(837, 455);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(95, 27);
+            this.btnNext.TabIndex = 3;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
             // 
             // Learn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 491);
-            this.Controls.Add(this.pictureBoxPDF);
-            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPrev);
+            this.Controls.Add(this.linkLbl);
+            this.Controls.Add(this.pictureBoxLearn);
             this.Name = "Learn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Learn";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,7 +92,9 @@ namespace Scoala_Informala_EDU
 
         #endregion
 
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.PictureBox pictureBoxPDF;
+        private System.Windows.Forms.PictureBox pictureBoxLearn;
+        private System.Windows.Forms.LinkLabel linkLbl;
+        private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Button btnNext;
     }
 }
