@@ -29,11 +29,15 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLearn = new System.Windows.Forms.Button();
             this.btnQuiz = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
+            this.RadioBtnMusic = new System.Windows.Forms.CheckBox();
+            this.TextScrolling = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnLearn
@@ -116,6 +120,34 @@ namespace Scoala_Informala_EDU
             this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.QuitClickEvent);
             // 
+            // RadioBtnMusic
+            // 
+            this.RadioBtnMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RadioBtnMusic.AutoSize = true;
+            this.RadioBtnMusic.Location = new System.Drawing.Point(860, 12);
+            this.RadioBtnMusic.Name = "RadioBtnMusic";
+            this.RadioBtnMusic.Size = new System.Drawing.Size(112, 19);
+            this.RadioBtnMusic.TabIndex = 9;
+            this.RadioBtnMusic.Text = "Play/Stop Music";
+            this.RadioBtnMusic.UseVisualStyleBackColor = true;
+            this.RadioBtnMusic.CheckedChanged += new System.EventHandler(this.btnRadioEvent);
+            // 
+            // TextScrolling
+            // 
+            this.TextScrolling.AutoSize = true;
+            this.TextScrolling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.TextScrolling.Location = new System.Drawing.Point(12, 16);
+            this.TextScrolling.Name = "TextScrolling";
+            this.TextScrolling.Size = new System.Drawing.Size(38, 15);
+            this.TextScrolling.TabIndex = 10;
+            this.TextScrolling.Text = "label1";
+            this.TextScrolling.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TextScrolling.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -124,6 +156,8 @@ namespace Scoala_Informala_EDU
             this.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.MainBackround;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 521);
+            this.Controls.Add(this.TextScrolling);
+            this.Controls.Add(this.RadioBtnMusic);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.button3);
@@ -132,7 +166,9 @@ namespace Scoala_Informala_EDU
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scoala Informala EDU";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -143,6 +179,9 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.CheckBox RadioBtnMusic;
+        private System.Windows.Forms.Label TextScrolling;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
