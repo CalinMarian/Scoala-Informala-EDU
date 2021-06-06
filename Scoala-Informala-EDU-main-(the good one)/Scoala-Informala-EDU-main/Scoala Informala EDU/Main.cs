@@ -47,15 +47,19 @@ namespace Scoala_Informala_EDU
             Application.Exit();
         }
 
-        private void BtnRadioEvent(object sender, EventArgs e)
+        private void SoundOnEvent(object sender, EventArgs e)
         {
-            if (RadioBtnMusic.Checked)
-            {
-                mediaSoundPlayer.Stream = Properties.Resources.myMusic_wav;
-                mediaSoundPlayer.PlayLooping();
-            }
-            else
-                mediaSoundPlayer.Stop();
+            btnSoundOFF.Visible = true;
+            btnSoundON.Visible = false;
+            mediaSoundPlayer.Stop();
+        }
+
+        private void SoundOffEvent(object sender, EventArgs e)
+        {
+            btnSoundON.Visible = true;
+            btnSoundOFF.Visible = false;
+            mediaSoundPlayer.Stream = Properties.Resources.myMusic_wav;
+            mediaSoundPlayer.PlayLooping();
         }
     }
 }
