@@ -29,6 +29,7 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Learn));
             this.pictureBoxLearn = new System.Windows.Forms.PictureBox();
             this.linkLbl = new System.Windows.Forms.LinkLabel();
             this.btnPrev = new System.Windows.Forms.Button();
@@ -38,52 +39,44 @@ namespace Scoala_Informala_EDU
             // 
             // pictureBoxLearn
             // 
-            this.pictureBoxLearn.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.pictureBoxLearn, "pictureBoxLearn");
             this.pictureBoxLearn.Name = "pictureBoxLearn";
-            this.pictureBoxLearn.Size = new System.Drawing.Size(920, 436);
-            this.pictureBoxLearn.TabIndex = 0;
             this.pictureBoxLearn.TabStop = false;
             // 
             // linkLbl
             // 
-            this.linkLbl.AutoSize = true;
-            this.linkLbl.Location = new System.Drawing.Point(412, 460);
+            resources.ApplyResources(this.linkLbl, "linkLbl");
+            this.linkLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLbl.Name = "linkLbl";
-            this.linkLbl.Size = new System.Drawing.Size(108, 15);
-            this.linkLbl.TabIndex = 1;
             this.linkLbl.TabStop = true;
-            this.linkLbl.Text = "Click here for more";
+            this.linkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkClickedEvent);
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(13, 454);
+            resources.ApplyResources(this.btnPrev, "btnPrev");
+            this.btnPrev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(95, 27);
-            this.btnPrev.TabIndex = 2;
-            this.btnPrev.Text = "Prev";
             this.btnPrev.UseVisualStyleBackColor = true;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(837, 455);
+            resources.ApplyResources(this.btnNext, "btnNext");
+            this.btnNext.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.GetStarted;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(95, 27);
-            this.btnNext.TabIndex = 3;
-            this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.NextClickEvent);
             // 
             // Learn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 491);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.linkLbl);
             this.Controls.Add(this.pictureBoxLearn);
             this.Name = "Learn";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Learn";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

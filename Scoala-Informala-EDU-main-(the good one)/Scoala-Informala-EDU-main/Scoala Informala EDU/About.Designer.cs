@@ -49,7 +49,7 @@ namespace Scoala_Informala_EDU
             // 
             // lblAbout
             // 
-            this.lblAbout.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblAbout.BackColor = System.Drawing.Color.DarkKhaki;
             this.lblAbout.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblAbout.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblAbout.Font = new System.Drawing.Font("Dotum", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
