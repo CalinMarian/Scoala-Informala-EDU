@@ -55,6 +55,7 @@ namespace Scoala_Informala_EDU
             this.lblQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblQuestion.BackColor = System.Drawing.Color.White;
             this.lblQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblQuestion.Location = new System.Drawing.Point(12, 250);
             this.lblQuestion.Name = "lblQuestion";
@@ -119,6 +120,7 @@ namespace Scoala_Informala_EDU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(944, 491);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
