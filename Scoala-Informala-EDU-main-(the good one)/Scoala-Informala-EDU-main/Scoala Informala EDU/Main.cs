@@ -13,7 +13,9 @@ namespace Scoala_Informala_EDU
     public partial class Main : Form
     {
         private readonly System.Media.SoundPlayer mediaSoundPlayer = new();
-        int x = 255, y = 1;
+        private int x = 1000;
+        private readonly int y = 1;
+
         public Main()
         {
             InitializeComponent();
@@ -62,24 +64,22 @@ namespace Scoala_Informala_EDU
             mediaSoundPlayer.Stream = Properties.Resources.myMusic_wav;
             mediaSoundPlayer.PlayLooping();
         }
-        private void Timer1_Tick(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
+            {
+                TextScrolling.Text = "C# Programming - courses and quizzes";
+                TextScrolling.Font = new Font("", 18, FontStyle.Bold);
+                timer.Interval = 1;
+                timer.Start();
+            }
+        private void Timer_Tick(object sender, EventArgs e)
         {
             TextScrolling.SetBounds(x, y, 1, 1);
             x--;
-            if (x <= 1)
+            if (x <= -400)
             {
-                x = 250;
+                x = 1000;
             }
         }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-            TextScrolling.Text = "C# Programming - courses and quizzes";
-            TextScrolling.Font = new Font("", 18, FontStyle.Bold);
-            timer1.Interval = 1;
-            timer1.Start();
-        }
-
 
     }
 }

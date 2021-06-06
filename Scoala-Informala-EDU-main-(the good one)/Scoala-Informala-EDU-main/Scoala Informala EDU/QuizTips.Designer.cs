@@ -106,7 +106,7 @@ namespace Scoala_Informala_EDU
             this.lblQuestions.TabIndex = 5;
             this.lblQuestions.Text = "Question";
             this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblQuestions.Click += new System.EventHandler(this.Label1_Click);
+
             // 
             // txtQuestion
             // 
@@ -119,7 +119,7 @@ namespace Scoala_Informala_EDU
             this.txtQuestion.Text = "Hi, welcome to this quiz game! We will be showing different questions, make sure " +
     "to choose the correct answer!";
             this.txtQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtQuestion.TextChanged += new System.EventHandler(this.TxtQuestion_TextChanged);
+
             // 
             // countdownTimer
             // 
@@ -150,7 +150,6 @@ namespace Scoala_Informala_EDU
             this.Name = "QuizTips";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuizTips";
-            this.Load += new System.EventHandler(this.QuizTips_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

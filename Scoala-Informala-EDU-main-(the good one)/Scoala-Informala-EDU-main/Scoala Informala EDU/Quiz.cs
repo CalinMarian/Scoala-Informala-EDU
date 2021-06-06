@@ -20,7 +20,6 @@ namespace Scoala_Informala_EDU
         int score = 0;
         int percentage;
 
-
         public Quiz()
         {
             InitializeComponent();
@@ -361,7 +360,6 @@ namespace Scoala_Informala_EDU
                 );
             RestartQuiz();
         }
-
 
     }
 }

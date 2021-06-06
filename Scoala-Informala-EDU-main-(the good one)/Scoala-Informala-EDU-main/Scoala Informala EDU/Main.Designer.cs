@@ -39,7 +39,7 @@ namespace Scoala_Informala_EDU
             this.btnSoundON = new System.Windows.Forms.Button();
             this.lblSound = new System.Windows.Forms.Label();
             this.TextScrolling = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnLearn
@@ -128,7 +128,7 @@ namespace Scoala_Informala_EDU
             this.btnSoundOFF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSoundOFF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSoundOFF.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnSoundOFF.Location = new System.Drawing.Point(916, 12);
+            this.btnSoundOFF.Location = new System.Drawing.Point(916, 35);
             this.btnSoundOFF.Name = "btnSoundOFF";
             this.btnSoundOFF.Size = new System.Drawing.Size(56, 55);
             this.btnSoundOFF.TabIndex = 10;
@@ -142,7 +142,7 @@ namespace Scoala_Informala_EDU
             this.btnSoundON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSoundON.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSoundON.Font = new System.Drawing.Font("Calibri", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btnSoundON.Location = new System.Drawing.Point(916, 12);
+            this.btnSoundON.Location = new System.Drawing.Point(916, 35);
             this.btnSoundON.Name = "btnSoundON";
             this.btnSoundON.Size = new System.Drawing.Size(56, 55);
             this.btnSoundON.TabIndex = 11;
@@ -154,7 +154,7 @@ namespace Scoala_Informala_EDU
             // lblSound
             // 
             this.lblSound.Font = new System.Drawing.Font("Calibri", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblSound.Location = new System.Drawing.Point(916, 70);
+            this.lblSound.Location = new System.Drawing.Point(916, 93);
             this.lblSound.Name = "lblSound";
             this.lblSound.Size = new System.Drawing.Size(56, 35);
             this.lblSound.TabIndex = 12;
@@ -172,9 +172,10 @@ namespace Scoala_Informala_EDU
             this.TextScrolling.Text = "label1";
             this.TextScrolling.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.timer.Interval = 20;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Main
             // 
@@ -213,7 +214,7 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.Button btnSoundON;
         private System.Windows.Forms.Label lblSound;
         private System.Windows.Forms.Label TextScrolling;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
     }
 }
 

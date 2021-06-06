@@ -76,7 +76,6 @@ namespace Scoala_Informala_EDU
             treeNode6});
             this.TreeView1.Size = new System.Drawing.Size(235, 174);
             this.TreeView1.TabIndex = 0;
-            this.TreeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView1_AfterSelect);
             this.TreeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.TreeView1_NodeMouseClick);
             // 
             // Btn_quiz
@@ -104,7 +103,6 @@ namespace Scoala_Informala_EDU
             this.label1.Text = "How did you find the tips?\r\n\r\nFelling confident enough for a quick quiz?\r\n\r\nClick" +
     " on the Quick Quiz button for a short assessment!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // richTextBox1
             // 

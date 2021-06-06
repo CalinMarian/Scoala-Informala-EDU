@@ -69,7 +69,7 @@ namespace Scoala_Informala_EDU
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.btnClose);
             this.Name = "About";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About";
             this.ResumeLayout(false);
 
