@@ -54,6 +54,8 @@ namespace Scoala_Informala_EDU
 
             if (questionNumber == totalQuestions)
             {
+                countdownTimer.Stop();
+
                 percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
                 MessageBox.Show(
                     "Quiz Ended!" + Environment.NewLine +

@@ -29,6 +29,7 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLearn = new System.Windows.Forms.Button();
             this.btnQuiz = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
@@ -37,6 +38,8 @@ namespace Scoala_Informala_EDU
             this.btnSoundOFF = new System.Windows.Forms.Button();
             this.btnSoundON = new System.Windows.Forms.Button();
             this.lblSound = new System.Windows.Forms.Label();
+            this.TextScrolling = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnLearn
@@ -158,6 +161,21 @@ namespace Scoala_Informala_EDU
             this.lblSound.Text = "Sound ON/OFF";
             this.lblSound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TextScrolling
+            // 
+            this.TextScrolling.AutoSize = true;
+            this.TextScrolling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.TextScrolling.Location = new System.Drawing.Point(12, 12);
+            this.TextScrolling.Name = "TextScrolling";
+            this.TextScrolling.Size = new System.Drawing.Size(38, 15);
+            this.TextScrolling.TabIndex = 13;
+            this.TextScrolling.Text = "label1";
+            this.TextScrolling.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -166,6 +184,7 @@ namespace Scoala_Informala_EDU
             this.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.MainBackround;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 521);
+            this.Controls.Add(this.TextScrolling);
             this.Controls.Add(this.lblSound);
             this.Controls.Add(this.btnSoundON);
             this.Controls.Add(this.btnSoundOFF);
@@ -177,7 +196,9 @@ namespace Scoala_Informala_EDU
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scoala Informala EDU";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,6 +212,8 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.Button btnSoundOFF;
         private System.Windows.Forms.Button btnSoundON;
         private System.Windows.Forms.Label lblSound;
+        private System.Windows.Forms.Label TextScrolling;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
