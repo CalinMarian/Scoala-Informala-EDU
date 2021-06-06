@@ -127,7 +127,7 @@ namespace Scoala_Informala_EDU
             this.RadioBtnMusic.TabIndex = 9;
             this.RadioBtnMusic.Text = "Play/Stop Music";
             this.RadioBtnMusic.UseVisualStyleBackColor = true;
-            this.RadioBtnMusic.CheckedChanged += new System.EventHandler(this.btnRadioEvent);
+            this.RadioBtnMusic.CheckedChanged += new System.EventHandler(this.BtnRadioEvent);
             // 
             // Main
             // 

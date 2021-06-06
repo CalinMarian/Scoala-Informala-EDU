@@ -12,7 +12,7 @@ namespace Scoala_Informala_EDU
 {
     public partial class Main : Form
     {
-        private System.Media.SoundPlayer mediaSoundPlayer = new System.Media.SoundPlayer();
+        private readonly System.Media.SoundPlayer mediaSoundPlayer = new();
         public Main()
         {
             InitializeComponent();
@@ -47,8 +47,7 @@ namespace Scoala_Informala_EDU
             Application.Exit();
         }
 
-
-        private void btnRadioEvent(object sender, EventArgs e)
+        private void BtnRadioEvent(object sender, EventArgs e)
         {
             if (RadioBtnMusic.Checked)
             {
@@ -58,7 +57,5 @@ namespace Scoala_Informala_EDU
             else
                 mediaSoundPlayer.Stop();
         }
-
-
     }
 }

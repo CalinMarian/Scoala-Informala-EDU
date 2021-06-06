@@ -13,60 +13,41 @@ namespace Scoala_Informala_EDU
     public partial class Quiz : Form
     {
 
+        List<int> questionNumbers = new() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+        int qNum = 0;
+        int i;
         int correctAnswer;
-        int questionNumber = 1;
         int score = 0;
         int percentage;
-        readonly int totalQuestions = 20;
 
 
         public Quiz()
         {
             InitializeComponent();
 
-            AskQuestion(questionNumber);
+            RandomQuestionsList();
 
+            AskQuestion();
         }
 
-        private void CheckAnswerEvent(object sender, EventArgs e)
+        private void RandomQuestionsList()
         {
-            var senderObject = (Button)sender;
-
-            int buttonTag = Convert.ToInt32(senderObject.Tag);
-
-
-
-            if (buttonTag == correctAnswer)
-            {
-                score++;
-            }
-
-            if (questionNumber == totalQuestions)
-            {
-                percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
-
-                MessageBox.Show(
-                    "Quiz Ended!" + Environment.NewLine +
-                    "You have answered " + score + " questions correctly! " + Environment.NewLine +
-                    "Your total percentage is " + percentage + "% !" + Environment.NewLine +
-                    "Click OK to play again."
-                    );
-
-                score = 0;
-                questionNumber = 1;
-                AskQuestion(questionNumber);
-            }
-
-            questionNumber++;
-            AskQuestion(questionNumber);
+            var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
+            questionNumbers = randomList;
         }
-
-
-
-        private void AskQuestion(int questionNumber)
+        private void AskQuestion()
         {
 
-            switch (questionNumber)
+            if (qNum < questionNumbers.Count)
+            {
+                i = questionNumbers[qNum];
+            }
+            else
+            {
+                EndQuiz();
+            }
+
+            switch (i)
             {
                 case 1:
                     pictureBox.Image = Properties.Resources.MainBackround;
@@ -419,9 +400,46 @@ namespace Scoala_Informala_EDU
 
                     break;
             }
-         
+
+        }
+        private void CheckAnswerEvent(object sender, EventArgs e)
+        {
+            var senderObject = (Button)sender;
+
+            int buttonTag = Convert.ToInt32(senderObject.Tag);
+
+            if (buttonTag == correctAnswer)
+            {
+                score++;
+            }
+
+            if (qNum < questionNumbers.Count)
+            {
+                qNum++;
+                AskQuestion();
+            }
+            else EndQuiz();
+        }
+        private void RestartQuiz()
+        {
+            score = 0;
+            qNum = 0;
+            i = 0;
+            AskQuestion();
+        }
+        private void EndQuiz()
+        {
+            percentage = (int)Math.Round((double)(score * 100) / questionNumbers.Count);
+
+            MessageBox.Show(
+                "Quiz Ended!" + Environment.NewLine +
+                "You have answered " + score + " questions correctly! " + Environment.NewLine +
+                "Your total percentage is " + percentage + "% !" + Environment.NewLine +
+                "Click OK to play again."
+                );
+            RestartQuiz();
         }
 
-       
+
     }
 }
