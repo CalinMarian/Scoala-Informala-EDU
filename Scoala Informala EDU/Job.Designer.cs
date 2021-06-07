@@ -43,14 +43,13 @@ namespace Scoala_Informala_EDU
             this.TreeView1 = new System.Windows.Forms.TreeView();
             this.Btn_quiz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTips = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // TreeView1
             // 
             this.TreeView1.CheckBoxes = true;
-            this.TreeView1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreeView1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TreeView1.HotTracking = true;
             this.TreeView1.Location = new System.Drawing.Point(14, 14);
             this.TreeView1.Margin = new System.Windows.Forms.Padding(5);
@@ -77,14 +76,14 @@ namespace Scoala_Informala_EDU
             treeNode6});
             this.TreeView1.Size = new System.Drawing.Size(235, 174);
             this.TreeView1.TabIndex = 0;
-            this.TreeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView1_AfterSelect);
+            this.TreeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.TreeView1_NodeMouseClick);
             // 
             // Btn_quiz
             // 
             this.Btn_quiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_quiz.BackColor = System.Drawing.Color.Yellow;
             this.Btn_quiz.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_quiz.Location = new System.Drawing.Point(737, 444);
+            this.Btn_quiz.Location = new System.Drawing.Point(495, 444);
             this.Btn_quiz.Name = "Btn_quiz";
             this.Btn_quiz.Size = new System.Drawing.Size(195, 35);
             this.Btn_quiz.TabIndex = 1;
@@ -96,28 +95,18 @@ namespace Scoala_Informala_EDU
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(737, 227);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(495, 276);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 214);
+            this.label1.Size = new System.Drawing.Size(195, 165);
             this.label1.TabIndex = 2;
             this.label1.Text = "How did you find the tips?\r\n\r\nFelling confident enough for a quick quiz?\r\n\r\nClick" +
     " on the Quick Quiz button for a short assessment!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
-            // 
-            // btnTips
-            // 
-            this.btnTips.Location = new System.Drawing.Point(14, 392);
-            this.btnTips.Name = "btnTips";
-            this.btnTips.Size = new System.Drawing.Size(174, 49);
-            this.btnTips.TabIndex = 3;
-            this.btnTips.Text = "TIPS";
-            this.btnTips.UseVisualStyleBackColor = true;
-            this.btnTips.Click += new System.EventHandler(this.BtnTips_Click);
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox1.Location = new System.Drawing.Point(290, 14);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(642, 210);
@@ -131,7 +120,6 @@ namespace Scoala_Informala_EDU
             this.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.Background_tips;
             this.ClientSize = new System.Drawing.Size(944, 491);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.btnTips);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_quiz);
             this.Controls.Add(this.TreeView1);
@@ -148,7 +136,6 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.TreeView TreeView1;
         private System.Windows.Forms.Button Btn_quiz;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnTips;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

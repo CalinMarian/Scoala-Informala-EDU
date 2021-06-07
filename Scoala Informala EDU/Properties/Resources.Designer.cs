@@ -73,6 +73,16 @@ namespace Scoala_Informala_EDU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GetStarted {
+            get {
+                object obj = ResourceManager.GetObject("GetStarted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hmm {
             get {
                 object obj = ResourceManager.GetObject("hmm", resourceCulture);
@@ -83,9 +93,39 @@ namespace Scoala_Informala_EDU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_Intro {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-Intro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MainBackround {
             get {
                 object obj = ResourceManager.GetObject("MainBackround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MusicOFF {
+            get {
+                object obj = ResourceManager.GetObject("MusicOFF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MusicON {
+            get {
+                object obj = ResourceManager.GetObject("MusicON", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,6 +155,16 @@ namespace Scoala_Informala_EDU.Properties {
         internal static System.Drawing.Bitmap Q5 {
             get {
                 object obj = ResourceManager.GetObject("Q5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QuizImage {
+            get {
+                object obj = ResourceManager.GetObject("QuizImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

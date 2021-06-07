@@ -27,16 +27,6 @@ namespace Scoala_Informala_EDU
             totalQuestions = 15;
         }
 
-        private void QuizTips_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CheckAnswerEvent(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
@@ -54,6 +44,8 @@ namespace Scoala_Informala_EDU
 
             if (questionNumber == totalQuestions)
             {
+                countdownTimer.Stop();
+
                 percentage = (int)Math.Round((double)(score * 100) / totalQuestions);
                 MessageBox.Show(
                     "Quiz Ended!" + Environment.NewLine +
@@ -289,11 +281,6 @@ namespace Scoala_Informala_EDU
             }
         }
 
-        private void TxtQuestion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Timer1_Tick(object sender, EventArgs e)
         {
             lblScreen.Text = seconds--.ToString();
@@ -302,9 +289,6 @@ namespace Scoala_Informala_EDU
                 countdownTimer.Stop();
                 NextQuestion();
             }
-
-
-
 
         }
     }
