@@ -30,14 +30,15 @@ namespace Scoala_Informala_EDU
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuizTips));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblQuestions = new System.Windows.Forms.Label();
-            this.txtQuestion = new System.Windows.Forms.TextBox();
             this.countdownTimer = new System.Windows.Forms.Timer(this.components);
+            this.lblExplanation = new System.Windows.Forms.Label();
             this.lblScreen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +89,7 @@ namespace Scoala_Informala_EDU
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Scoala_Informala_EDU.Properties.Resources.hmm;
             this.pictureBox1.Location = new System.Drawing.Point(376, 151);
             this.pictureBox1.Name = "pictureBox1";
@@ -106,29 +108,26 @@ namespace Scoala_Informala_EDU
             this.lblQuestions.TabIndex = 5;
             this.lblQuestions.Text = "Question";
             this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-            // 
-            // txtQuestion
-            // 
-            this.txtQuestion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtQuestion.Location = new System.Drawing.Point(443, 12);
-            this.txtQuestion.Multiline = true;
-            this.txtQuestion.Name = "txtQuestion";
-            this.txtQuestion.Size = new System.Drawing.Size(311, 73);
-            this.txtQuestion.TabIndex = 7;
-            this.txtQuestion.Text = "Hi, welcome to this quiz game! We will be showing different questions, make sure " +
-    "to choose the correct answer!";
-            this.txtQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // countdownTimer
             // 
             this.countdownTimer.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
+            // lblExplanation
+            // 
+            this.lblExplanation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblExplanation.Location = new System.Drawing.Point(465, 21);
+            this.lblExplanation.Name = "lblExplanation";
+            this.lblExplanation.Size = new System.Drawing.Size(311, 73);
+            this.lblExplanation.TabIndex = 9;
+            this.lblExplanation.Text = "Hi, welcome to this quiz game! We will be showing different questions, make sure " +
+    "to choose the correct answer!";
+            this.lblExplanation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblScreen
             // 
             this.lblScreen.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblScreen.Location = new System.Drawing.Point(613, 88);
+            this.lblScreen.Location = new System.Drawing.Point(575, 183);
             this.lblScreen.Name = "lblScreen";
             this.lblScreen.Size = new System.Drawing.Size(141, 55);
             this.lblScreen.TabIndex = 8;
@@ -139,20 +138,20 @@ namespace Scoala_Informala_EDU
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblExplanation);
             this.Controls.Add(this.lblScreen);
-            this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lblQuestions);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuizTips";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuizTips";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -164,8 +163,8 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblQuestions;
-        private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Timer countdownTimer;
+        private System.Windows.Forms.Label lblExplanation;
         private System.Windows.Forms.Label lblScreen;
     }
 }

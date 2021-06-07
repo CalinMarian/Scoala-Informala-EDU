@@ -40,6 +40,7 @@ namespace Scoala_Informala_EDU
             treeNode1,
             treeNode4,
             treeNode5});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Job));
             this.TreeView1 = new System.Windows.Forms.TreeView();
             this.Btn_quiz = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -124,8 +125,9 @@ namespace Scoala_Informala_EDU
             this.Controls.Add(this.Btn_quiz);
             this.Controls.Add(this.TreeView1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Job";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Job Interview Tips";
             this.ResumeLayout(false);
 

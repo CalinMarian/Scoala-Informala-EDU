@@ -5,6 +5,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Scoala_Informala_EDU</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>csharp.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

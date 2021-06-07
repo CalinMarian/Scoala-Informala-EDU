@@ -26,7 +26,7 @@ namespace Scoala_Informala_EDU
         {
             InitializeComponent();
             InitialPage();
-            
+
         }
 
         private void InitialPage()

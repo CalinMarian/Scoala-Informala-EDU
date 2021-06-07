@@ -29,6 +29,7 @@ namespace Scoala_Informala_EDU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.btnClose = new System.Windows.Forms.Button();
             this.lblAbout = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -68,6 +69,7 @@ namespace Scoala_Informala_EDU
             this.ClientSize = new System.Drawing.Size(296, 203);
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.btnClose);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "About";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About";

@@ -30,6 +30,7 @@ namespace Scoala_Informala_EDU
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnLearn = new System.Windows.Forms.Button();
             this.btnQuiz = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
@@ -194,6 +195,7 @@ namespace Scoala_Informala_EDU
             this.Controls.Add(this.btnJob);
             this.Controls.Add(this.btnQuiz);
             this.Controls.Add(this.btnLearn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scoala Informala EDU";

@@ -17,7 +17,7 @@ namespace Scoala_Informala_EDU
             InitializeComponent();
         }
 
-    private void Btn_quiz_Click(object sender, EventArgs e)
+        private void Btn_quiz_Click(object sender, EventArgs e)
         {
             QuizTips quizTips = new();
             this.Hide();
@@ -26,9 +26,9 @@ namespace Scoala_Informala_EDU
 
         private void BtnTips_Click(object sender, EventArgs e)
         {
-            Tips tips = new();
-            this.Hide();
-            tips.ShowDialog();
+            //Tips tips = new();
+            //this.Hide();
+            //tips.ShowDialog();
 
         }
 
@@ -106,4 +106,4 @@ namespace Scoala_Informala_EDU
         }
     }
 }
- 
+

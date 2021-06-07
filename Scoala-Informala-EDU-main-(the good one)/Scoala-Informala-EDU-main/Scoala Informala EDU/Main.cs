@@ -65,12 +65,12 @@ namespace Scoala_Informala_EDU
             mediaSoundPlayer.PlayLooping();
         }
         private void Main_Load(object sender, EventArgs e)
-            {
-                TextScrolling.Text = "C# Programming - courses and quizzes";
-                TextScrolling.Font = new Font("", 18, FontStyle.Bold);
-                timer.Interval = 1;
-                timer.Start();
-            }
+        {
+            TextScrolling.Text = "C# Programming - courses and quizzes";
+            TextScrolling.Font = new Font("", 18, FontStyle.Bold);
+            timer.Interval = 1;
+            timer.Start();
+        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             TextScrolling.SetBounds(x, y, 1, 1);
