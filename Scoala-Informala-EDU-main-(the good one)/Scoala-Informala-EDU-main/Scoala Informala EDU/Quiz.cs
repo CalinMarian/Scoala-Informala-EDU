@@ -325,21 +325,29 @@ namespace Scoala_Informala_EDU
         }
         private void CheckAnswerEvent(object sender, EventArgs e)
         {
-            var senderObject = (Button)sender;
-
-            int buttonTag = Convert.ToInt32(senderObject.Tag);
-
-            if (buttonTag == correctAnswer)
+            try
             {
-                score++;
+                var senderObject = (Button)sender;
+                int buttonTag = Convert.ToInt32(senderObject.Tag);
+
+                if (buttonTag == correctAnswer)
+                {
+                    score++;
+                }
+
+                if (qNum < questionNumbers.Count)
+                {
+                    qNum++;
+                    AskQuestion();
+                }
+                else EndQuiz();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Please select an answer in order to proceed to the next question!");
             }
 
-            if (qNum < questionNumbers.Count)
-            {
-                qNum++;
-                AskQuestion();
-            }
-            else EndQuiz();
         }
         private void RestartQuiz()
         {

@@ -111,6 +111,7 @@ namespace Scoala_Informala_EDU
             // 
             // countdownTimer
             // 
+            this.countdownTimer.Interval = 300;
             this.countdownTimer.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // lblExplanation

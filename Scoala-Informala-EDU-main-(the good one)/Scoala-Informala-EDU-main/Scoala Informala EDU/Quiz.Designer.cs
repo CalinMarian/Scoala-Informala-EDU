@@ -36,7 +36,6 @@ namespace Scoala_Informala_EDU
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.lblTransparent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,14 +123,6 @@ namespace Scoala_Informala_EDU
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.CheckAnswerEvent);
             // 
-            // lblTransparent
-            // 
-            this.lblTransparent.Location = new System.Drawing.Point(0, 287);
-            this.lblTransparent.Name = "lblTransparent";
-            this.lblTransparent.Size = new System.Drawing.Size(943, 206);
-            this.lblTransparent.TabIndex = 6;
-            this.lblTransparent.Text = "Transparent";
-            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -144,7 +135,6 @@ namespace Scoala_Informala_EDU
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.pictureBox);
-            this.Controls.Add(this.lblTransparent);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -164,6 +154,5 @@ namespace Scoala_Informala_EDU
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer countdownTimer;
-        private System.Windows.Forms.Label lblTransparent;
     }
 }
