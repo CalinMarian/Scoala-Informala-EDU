@@ -16,6 +16,8 @@ namespace Scoala_Informala_EDU
         private int x = 1000;
         private readonly int y = 1;
 
+
+
         public Main()
         {
             InitializeComponent();

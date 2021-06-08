@@ -53,6 +53,7 @@ namespace Scoala_Informala_EDU
                     "Click OK to play again"
                     );
 
+
                 score = 0;
                 questionNumber = 0;
                 AskQuestion(questionNumber);
@@ -290,6 +291,7 @@ namespace Scoala_Informala_EDU
             }
 
         }
+
     }
 
 }

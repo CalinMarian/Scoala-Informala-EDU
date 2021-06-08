@@ -13,13 +13,15 @@ namespace Scoala_Informala_EDU
 {
     public partial class Learn : Form
     {
-        readonly string[] LinkCollection = new string[]
-            {
-            "https://www.google.ro/",
-            "https://www.microsoft.com/ro-ro",
-            "https://ro.yahoo.com/?p=us&guccounter=1"
-             };
-        int linkIndex = 0;
+
+        //readonly List<LinkLabel> links = new
+        //{
+        //    https://www.google.ro/,
+        //    https://www.microsoft.com/ro-ro,
+        //    https://ro.yahoo.com/?p=us&guccounter=1
+        //};
+        
+
 
 
         public Learn()
@@ -33,19 +35,18 @@ namespace Scoala_Informala_EDU
         {
             btnPrev.Visible = false;
             pictureBoxLearn.Image = Properties.Resources.LearnPicture_Intro;
-
         }
 
 
         private void LinkClickedEvent(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(LinkCollection[linkIndex]);
+           
 
         }
 
         private void NextClickEvent(object sender, EventArgs e)
         {
-            linkIndex++;
+
             pictureBoxLearn.Image = Properties.Resources.GetStarted;
             btnPrev.Visible = true;
         }

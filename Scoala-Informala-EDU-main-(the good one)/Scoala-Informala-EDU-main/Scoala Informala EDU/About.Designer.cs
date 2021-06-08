@@ -50,9 +50,11 @@ namespace Scoala_Informala_EDU
             // 
             // lblAbout
             // 
+            this.lblAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAbout.BackColor = System.Drawing.Color.DarkKhaki;
             this.lblAbout.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblAbout.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblAbout.Font = new System.Drawing.Font("Dotum", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAbout.Location = new System.Drawing.Point(0, 0);
             this.lblAbout.Name = "lblAbout";
@@ -66,6 +68,7 @@ namespace Scoala_Informala_EDU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(296, 203);
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.btnClose);

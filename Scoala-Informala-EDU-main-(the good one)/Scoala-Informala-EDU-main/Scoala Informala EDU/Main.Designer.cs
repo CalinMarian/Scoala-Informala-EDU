@@ -45,6 +45,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnLearn
             // 
+            this.btnLearn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnLearn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLearn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLearn.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
@@ -61,6 +62,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnQuiz
             // 
+            this.btnQuiz.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnQuiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnQuiz.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuiz.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
@@ -77,6 +79,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnAbout
             // 
+            this.btnAbout.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAbout.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
@@ -93,6 +96,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnJob
             // 
+            this.btnJob.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnJob.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnJob.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJob.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
@@ -109,6 +113,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnQuit
             // 
+            this.btnQuit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnQuit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnQuit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuit.FlatAppearance.BorderColor = System.Drawing.Color.SkyBlue;
@@ -125,6 +130,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnSoundOFF
             // 
+            this.btnSoundOFF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSoundOFF.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.MusicOFF;
             this.btnSoundOFF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSoundOFF.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -139,6 +145,7 @@ namespace Scoala_Informala_EDU
             // 
             // btnSoundON
             // 
+            this.btnSoundON.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSoundON.BackgroundImage = global::Scoala_Informala_EDU.Properties.Resources.MusicON;
             this.btnSoundON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSoundON.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -154,6 +161,7 @@ namespace Scoala_Informala_EDU
             // 
             // lblSound
             // 
+            this.lblSound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSound.Font = new System.Drawing.Font("Calibri", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblSound.Location = new System.Drawing.Point(916, 93);
             this.lblSound.Name = "lblSound";
@@ -164,6 +172,7 @@ namespace Scoala_Informala_EDU
             // 
             // TextScrolling
             // 
+            this.TextScrolling.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TextScrolling.AutoSize = true;
             this.TextScrolling.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.TextScrolling.Location = new System.Drawing.Point(12, 12);

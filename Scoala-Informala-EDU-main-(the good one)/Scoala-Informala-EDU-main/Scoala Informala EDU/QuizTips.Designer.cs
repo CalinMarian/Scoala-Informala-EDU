@@ -45,6 +45,7 @@ namespace Scoala_Informala_EDU
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(358, 93);
@@ -56,6 +57,7 @@ namespace Scoala_Informala_EDU
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(12, 124);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(358, 93);
@@ -67,6 +69,7 @@ namespace Scoala_Informala_EDU
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Location = new System.Drawing.Point(12, 237);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(358, 93);
@@ -78,6 +81,7 @@ namespace Scoala_Informala_EDU
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(12, 345);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(358, 93);
@@ -89,6 +93,7 @@ namespace Scoala_Informala_EDU
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Scoala_Informala_EDU.Properties.Resources.hmm;
             this.pictureBox1.Location = new System.Drawing.Point(376, 151);
@@ -100,7 +105,7 @@ namespace Scoala_Informala_EDU
             // 
             // lblQuestions
             // 
-            this.lblQuestions.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuestions.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblQuestions.Location = new System.Drawing.Point(508, 275);
             this.lblQuestions.Name = "lblQuestions";
@@ -116,6 +121,7 @@ namespace Scoala_Informala_EDU
             // 
             // lblExplanation
             // 
+            this.lblExplanation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblExplanation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblExplanation.Location = new System.Drawing.Point(465, 21);
             this.lblExplanation.Name = "lblExplanation";
@@ -127,6 +133,7 @@ namespace Scoala_Informala_EDU
             // 
             // lblScreen
             // 
+            this.lblScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblScreen.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblScreen.Location = new System.Drawing.Point(575, 183);
             this.lblScreen.Name = "lblScreen";
