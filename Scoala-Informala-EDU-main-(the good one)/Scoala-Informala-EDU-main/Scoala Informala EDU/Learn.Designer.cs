@@ -57,6 +57,7 @@ namespace Scoala_Informala_EDU
             this.btnPrev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
@@ -77,6 +78,7 @@ namespace Scoala_Informala_EDU
             this.Controls.Add(this.linkLbl);
             this.Controls.Add(this.pictureBoxLearn);
             this.Name = "Learn";
+            this.Load += new System.EventHandler(this.Learn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLearn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
