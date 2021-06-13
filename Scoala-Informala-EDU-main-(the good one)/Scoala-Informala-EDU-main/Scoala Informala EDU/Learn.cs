@@ -13,42 +13,63 @@ namespace Scoala_Informala_EDU
 {
     public partial class Learn : Form
     {
+        List<PageData> pageData = new List<PageData>() {
+            new PageData(){
+                MainImage = Properties.Resources.GetStarted,
+                MoreInfoLink = "https://www.google.ro"
+        },
+            new PageData(){
+                MainImage = Properties.Resources.hmm,
+                MoreInfoLink = "yahoo.com"
+        }
+            };
 
-        //readonly List<LinkLabel> links = new
-        //{
-        //    https://www.google.ro/,
-        //    https://www.microsoft.com/ro-ro,
-        //    https://ro.yahoo.com/?p=us&guccounter=1
-        //};
-        
-
-
+        int currentPage = 0;
 
         public Learn()
         {
             InitializeComponent();
-            InitialPage();
+
+            List<LinkLabel> linkList = new List<LinkLabel>();
+
+            //linkList.Add(new LinkLabel() { Lin})
+            //linkList.Add(new LinkLabel((
+
+            //linkLbl.Links.Add(new LinkLabel.Link( "https://www.google.ro/",,);
+
+
+
 
         }
-
-        private void InitialPage()
-        {
-            btnPrev.Visible = false;
-            pictureBoxLearn.Image = Properties.Resources.LearnPicture_Intro;
-        }
-
 
         private void LinkClickedEvent(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
-
+            System.Diagnostics.Process.Start(pageData[currentPage].MoreInfoLink);
         }
 
         private void NextClickEvent(object sender, EventArgs e)
         {
+            currentPage++;
+            LoadPage();
+        }
 
-            pictureBoxLearn.Image = Properties.Resources.GetStarted;
-            btnPrev.Visible = true;
+        private void Learn_Load(object sender, EventArgs e)
+        {
+            LoadPage();
+        }
+
+        private void LoadPage()
+        {
+            pictureBoxLearn.Image = pageData[currentPage].MainImage;
+            btnPrev.Visible = currentPage > 0;
+            btnNext.Visible = currentPage < pageData.Count - 1;
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            currentPage--;
+            LoadPage();
+
         }
     }
 }
