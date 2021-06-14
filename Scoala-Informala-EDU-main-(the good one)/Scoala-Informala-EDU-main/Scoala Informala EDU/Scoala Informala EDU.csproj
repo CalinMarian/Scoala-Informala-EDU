@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\GetStarted.JPG" />
+    <None Remove="Resources\LearnPicture-Intro.JPG" />
+    <None Remove="Resources\LearnPicture-Methods.JPG" />
+    <None Remove="Resources\LearnPicture-Methods.png" />
+    <None Remove="Resources\LearnPicture-PrimateDataType.png" />
+    <None Remove="Resources\LearnPicture-PrimitiveDataType.bmp" />
+    <None Remove="Resources\Methodssss.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

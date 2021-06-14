@@ -93,9 +93,69 @@ namespace Scoala_Informala_EDU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_Classes {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-Classes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_GenericCollections {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-GenericCollections", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LearnPicture_Intro {
             get {
                 object obj = ResourceManager.GetObject("LearnPicture-Intro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_Methods {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-Methods", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_OOP {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-OOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_PrimitiveDataType {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-PrimitiveDataType", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LearnPicture_Strings {
+            get {
+                object obj = ResourceManager.GetObject("LearnPicture-Strings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

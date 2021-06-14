@@ -66,13 +66,13 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxLearn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 12</value>
+    <value>-1, 1</value>
   </data>
   <data name="pictureBoxLearn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>920, 450</value>
+    <value>949, 453</value>
   </data>
   <data name="pictureBoxLearn.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>StretchImage</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="pictureBoxLearn.TabIndex" type="System.Int32, System.Private.CoreLib">
@@ -89,6 +89,9 @@
   </data>
   <data name="&gt;&gt;pictureBoxLearn.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="linkLbl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="linkLbl.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -118,7 +121,7 @@
     <value>2</value>
   </data>
   <data name="btnPrev.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Left</value>
   </data>
   <data name="btnPrev.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>12, 460</value>
@@ -145,7 +148,7 @@
     <value>1</value>
   </data>
   <data name="btnNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Right</value>
   </data>
   <data name="btnNext.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>837, 460</value>

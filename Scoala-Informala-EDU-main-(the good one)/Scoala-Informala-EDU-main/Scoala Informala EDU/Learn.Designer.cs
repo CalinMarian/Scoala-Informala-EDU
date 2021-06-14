@@ -57,7 +57,7 @@ namespace Scoala_Informala_EDU
             this.btnPrev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.UseVisualStyleBackColor = true;
-            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
+            this.btnPrev.Click += new System.EventHandler(this.BtnPrev_Click);
             // 
             // btnNext
             // 

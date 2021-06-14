@@ -13,44 +13,58 @@ namespace Scoala_Informala_EDU
 {
     public partial class Learn : Form
     {
-        List<PageData> pageData = new List<PageData>() {
-            new PageData(){
-                MainImage = Properties.Resources.GetStarted,
-                MoreInfoLink = "https://www.google.ro"
-        },
-            new PageData(){
-                MainImage = Properties.Resources.hmm,
-                MoreInfoLink = "yahoo.com"
-        }
-            };
+        readonly List<PageData> pageData = new()
+        {
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_Intro,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_PrimitiveDataType,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_Strings,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_Methods,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_Classes,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_GenericCollections,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/standard/collections/when-to-use-generic-collections"
+            },
+            new PageData()
+            {
+                MainImage = Properties.Resources.LearnPicture_OOP,
+                MoreInfoLink = "https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop"
+            },
+        };
 
         int currentPage = 0;
 
         public Learn()
         {
             InitializeComponent();
-
-            List<LinkLabel> linkList = new List<LinkLabel>();
-
-            //linkList.Add(new LinkLabel() { Lin})
-            //linkList.Add(new LinkLabel((
-
-            //linkLbl.Links.Add(new LinkLabel.Link( "https://www.google.ro/",,);
-
-
-
-
         }
 
         private void LinkClickedEvent(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(pageData[currentPage].MoreInfoLink);
-        }
-
-        private void NextClickEvent(object sender, EventArgs e)
-        {
-            currentPage++;
-            LoadPage();
+            Process process = new();
+            process.StartInfo.FileName = @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe";
+            process.StartInfo.Arguments = pageData[currentPage].MoreInfoLink + " --new-window";
+            process.Start();
         }
 
         private void Learn_Load(object sender, EventArgs e)
@@ -64,12 +78,16 @@ namespace Scoala_Informala_EDU
             btnPrev.Visible = currentPage > 0;
             btnNext.Visible = currentPage < pageData.Count - 1;
         }
+        private void NextClickEvent(object sender, EventArgs e)
+        {
+            currentPage++;
+            LoadPage();
+        }
 
-        private void btnPrev_Click(object sender, EventArgs e)
+        private void BtnPrev_Click(object sender, EventArgs e)
         {
             currentPage--;
             LoadPage();
-
         }
     }
 }
